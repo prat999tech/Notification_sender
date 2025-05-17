@@ -1,9 +1,9 @@
 import { Notification } from "../models/notification.model.js";
 import { asyncHandler } from "../utils/asynchandler.js";
 import { apierror } from "../utils/apierror.js";
-import { sendEmail } from "../services/emailService.js";
-import { sendSMS } from "../services/smsService.js";
-import { sendInApp } from "../services/inAppService.js";
+import { sendEmail } from "../services/email.js";
+import { sendSMS } from "../services/sms.js";
+import { sendInApp } from "../services/inapp.js";
 
 // POST /notifications
 export const sendNotification = asyncHandler(async (req, res) => {

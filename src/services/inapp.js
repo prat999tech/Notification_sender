@@ -1,6 +1,6 @@
-import { Notification } from "../models/Notification.js";
+import { Notification } from "../models/notification.model.js";
 
-export const sendInApp = async (userId, message) => {
+ const sendInApp = async (userId, message) => {
   const notification = await Notification.create({
     userId,
     type: "in-app",
@@ -13,3 +13,5 @@ export const sendInApp = async (userId, message) => {
   });
   return notification;
 };
+
+export { sendInApp };

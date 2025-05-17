@@ -10,3 +10,4 @@ app.use(express.urlencoded({extended:false,limit:"10kb"}))
 import notificationRouter from "./routes/notification.routes.js"
 app.use("/api/v1/notification",notificationRouter)
 
+export default app;

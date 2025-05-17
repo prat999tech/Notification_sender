@@ -20,3 +20,5 @@ class apierror extends Error { // Line 1: Class definition and inheritance
 
     } // Line 19: Constructor body end
 } // Line 20: Class definition end
+    export {apierror}
+
